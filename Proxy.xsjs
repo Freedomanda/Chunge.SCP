@@ -29,7 +29,7 @@ function processRequest() {
 
 					var messages = [];
 					var idmin = 0;
-					var connget = $.db.getConnection("ericlinepackage::request");
+					var connget = $.db.getConnection("Chunge::request");
 					connget.prepareStatement("SET SCHEMA " + "\"CWU\"").execute(); // Setting the SCHEMA
 
 					var pStmtget = connget.prepareStatement('select "id", "createdTime", "content" ,"header" , "digaccid" from ' +
