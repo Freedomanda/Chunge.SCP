@@ -1,0 +1,17 @@
+namespace "Chunge".data;
+
+@Schema: 'CWU'
+context DigAccMessage {
+
+	type Content : String(5000);
+	type Header: String(5000);
+	type Digaccid: String(5000);
+	
+	entity Message {
+		key id : Integer; 
+		createdTime: UTCTimestamp;
+		content: Content;
+		header: Header;
+		digaccid:Digaccid;
+	};
+}; 
